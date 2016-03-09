@@ -15,7 +15,7 @@ namespace CalculateGroup
             for (int i = 1; i < 12; i++)
             {
                 Products product = new Products();
-                product.ID = new Random().Next(0, 999);
+                product.ID = i; //new Random().Next(0, 999);
                 product.Cost = i ;
                 product.Revenue = i + 10;
                 product.SellPrice = i + 20;
@@ -108,7 +108,8 @@ namespace CalculateGroup
             else
             {
                 return 0;
-            }
+            }
+
         }
         #endregion
     }
